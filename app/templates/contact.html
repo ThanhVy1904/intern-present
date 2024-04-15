@@ -1,0 +1,84 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <!--Main Content Area-->
+    <main id="content">
+        <!--Contact-->
+        <aside id="contact" class="contact">
+            <div class="row clearfix container">
+                <div class="col-2">
+                    {% if sentMessage %}
+                    <div class="col-1 background-message">
+                        <div class="message-content">
+                            <h3 style="color: #fff;">
+                                <i class="fa-regular fa-heart"></i><br>
+                                {{ form.name.data | upper }}
+                            </h3>
+                        </div>
+                    </div>
+                    {% else %}
+                    <!--Form-->
+                        <div>
+                            <form action="" method="post" novalidate>
+                                {{ form.hidden_tag() }}
+                                <p>
+                                    {{ form.name.label }} <span style="color: red;">*</span><br>
+                                    {{ form.name }}
+                                    {% for error in form.name.errors %}
+                                    <span style="color: red;">{{ error }}</span>
+                                    {% endfor %}
+                                </p>
+                                <p>
+                                    {{ form.email.label }} <span style="color: red;">*</span><br>
+                                    {{ form.email }}
+                                    {% for error in form.email.errors %}
+                                    <span style="color: red;">{{ error }}</span>
+                                    {% endfor %}
+                                </p>
+                                <p>
+                                    {{ form.message.label }} <span style="color: red;">*</span><br>
+                                    {{ form.message }}
+                                </p>
+                                <p> {{ form.submit() }}</p>
+                                </form>
+                        </div>
+                    <!-- </div> -->
+                    <!--End of Form-->
+                    {% endif %}     
+                </div>
+                <div class="col-2 background-contact">
+                        <h1 class="section-heading col-1 text-center">CONTACT</h1>
+                    <div style="padding-left: 17%;">
+                        <div class="col-1">
+                            <div class="icon-block">
+                                <div class="icon" >
+                                    <i class="fa-solid fa-mobile fa-1x" style="padding-left: 2px;"></i> 
+                                    <span class="icon-contact" style="padding-left: 9px;">0938995830</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-1">
+                            <div class="icon-block">
+                                <div class="icon">
+                                    <i class="fa-solid fa-envelope fa-1x"></i>
+                                    <span class="icon-contact" style="padding-left: 5px;">thanhvy190499@gmail.com</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-1">
+                            <div class="icon-block">
+                                <div class="icon">
+                                    <i class="fa-solid fa-location-dot fa-1x" style="padding-left: 2px;"></i>
+                                    <span class="icon-contact" style="padding-left: 9px;">Ho Chi Minh City</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </aside>
+        <!--End of Contact-->
+    </main>
+    <!--End Main Content Area-->
+{% endblock %}

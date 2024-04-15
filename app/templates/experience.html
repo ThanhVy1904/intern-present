@@ -1,0 +1,165 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <!--Main Content Area-->
+    <main id="content">
+
+        <!--Company-->
+        <section id="company" class="clearfix company">
+            <div class="row clearfix">
+                <div class="col-3">
+                    <div class="section-heading">
+                        <h3>COMPANY</h3>
+                        <h2 class="section-title">SAIGON A.I.</h2>
+                        <p class="section-subtitle">An Award Winning A.I. Advisory Company</p>
+                        <h4 style="text-align: justify;">
+                            SAIGON A.I. company, which specializes in AI design and data science services. 
+                            They're here to be your trusted guide through the fast-changing AI landscape, 
+                            remotely supporting your data-driven projects with expertise and reliability.
+                            <a href="https://www.saigonai.com/">Website</a>
+                        </h4>
+                    </div>
+                </div>
+
+                <div class="col-2-3">
+                    <img src=" {{ url_for('static', filename='images/gallery-images/gallery-image-1.jpg') }}"/>
+                </div>
+
+            </div>
+        </section>
+        <!--End of Company-->
+        <section id="expectations" class="clearfix expectations">
+            <div class="col-1">
+                <img class="col-2" src=" {{ url_for('static', filename='images/experience-images/experience.jpg') }}"/>
+                <div class="col-2">
+                    <!--Expectations-->
+                    <div class="col-1">
+                        <h3>EXPECTATIONS</h3>
+                        <h4>
+                            <ul>
+                                <li>Learn new skills</li>
+                                <li>Skills development</li>
+                                <li>Join a professional environment</li>
+                                <li>Work on real projects</li>
+                                <li>Experience the company culture</li>
+                            </ul>
+                        </h4>
+                    </div>
+                    <!--End of Expectations-->
+                    <!--Challenges-->
+                    <div class="col-1">
+                        <h3>CHALLENGES</h3>
+                        <h4>
+                            <ul>
+                                <li>New operating system MacOS</li>
+                                <li>After fixing this bug, another bug appears</li>
+                                <li>Communicate with people</li>
+                                <li>Speaking English</li>
+                                <li>Present in front of everyone</li>
+                            </ul>
+                        </h4>
+                    </div>
+                    <!--End of Challenges-->
+                </div>
+            </div>
+        </section>
+        <!--Lession-->
+        <section id="lession" class="clearfix lession">
+            <div class="clearfix">
+                <div class="col-1">
+                    <h3>WHAT HAVE I LEARNED?</h3>
+                </div>
+            </div>
+            <div>
+                <div class="col-2 container-text-center">
+                    <img class="col-2" src="{{ url_for('static', filename='images/experience-images/learn1.jpg') }}"/>
+                    <h4 class="col-2">
+                        <ul>
+                            <li>One bite at a time</li>
+                            <li>Always "18"</li>
+                            <li>Teamwork</li>
+                        </ul>
+                    </h4>
+                </div>
+            
+                <div class="col-2 container-text-center">
+                    <img class="col-2" src="{{ url_for('static', filename='images/experience-images/learn2.jpg') }}"/>
+                    <h4 class="col-2">
+                        <ul>
+                            <li>Flask/Python</li>
+                            <li>Unit test</li>
+                            <li>BDD test</li>
+                        </ul>
+                    </h4>
+                </div>
+            </div>
+        </section>
+        <!--End of Lession-->
+        <!--Benefit-->
+        <section id="benefit" class="clearfix benefit">
+            <div class="clearfix">
+                <h3 class="col-1">BENEFIT</h3>
+                <div>
+                    <div class="col-3-4 container-center">
+                        <img class="col-3" src=" {{ url_for('static', filename='images/experience-images/coffeetalk.jpg') }}"/>
+                        <div class="col-2">
+                            <div class="benefit-heading">COFFEE TALK</div>
+                            <div class="benefit-body">
+                                Twice a month, discuss a topic related to AI technology. 
+                                Will be randomly divided into 2 teams to debate with each other
+                            </div>
+                            <div class="benefit-body">
+                                <i class="fa-solid fa-thumbs-up"></i> <span>A delicious drink and it is fun to watch people debate</span> <br>
+                                <i class="fa-solid fa-thumbs-down"></i> <span>Had to walk in the sun, very sunny, VERY VERY SUNNY</span>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="col-3-4 container-center" style="flex-direction: row-reverse;">
+                        <img class="col-3" src=" {{ url_for('static', filename='images/experience-images/teatime.jpg') }}"/>
+                        <div class="col-2">
+                            <div class="benefit-heading">TEA TIME</div>
+                            <div class="benefit-body">
+                                At least once a month, organize a small party for people who have birthdays during the month. 
+                                Or organize to bring the whole company together.
+                            </div>
+                            <div class="benefit-body">
+                                <i class="fa-solid fa-thumbs-up"></i> <span>Good drinks and it is fun to watch people play games</span> <br>
+                                <i class="fa-solid fa-thumbs-down"></i> <span>Usually held on days when I don't work, the game is quite boring (personal opinion)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-3-4 container-center">
+                        <img class="col-3" src=" {{ url_for('static', filename='images/experience-images/englishclass.jpg') }}"/>
+                        <div class="col-2">
+                            <div class="benefit-heading">ENGLISH CLASS</div>
+                            <div class="benefit-body">
+                                A few sessions a month, one hour of studying/talking with Ms. Val
+                            </div>
+                            <div class="benefit-body">
+                                <i class="fa-solid fa-thumbs-up"></i> <span>Improve English.</span> <br>
+                                <i class="fa-solid fa-thumbs-down"></i> <span>Nothing</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--End of Benefit-->       
+        <!--Memories-->
+        <section id="memories" class="clearfix memories">
+            <div class="clearfix">
+                <div class="col-1">
+                    <h2>MEMORIES</h2>
+                </div>
+                <div>
+                    <body>Ghi gì đó ở đây nè</body>
+                </div>
+            </div>
+        </section>
+        <!--End of Memories-->
+    </main>
+    <!--End Main Content Area-->
+
+{% endblock %}

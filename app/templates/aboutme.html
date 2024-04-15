@@ -1,0 +1,93 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <!--Main Content Area-->
+    <main id="content">
+
+        <!--AboutMe-->
+        <section id="about" class="about">
+            <div class="row clearfix">
+                <!--Image AboutMe-->
+                <h1 style="text-align: center;">GET TO KNOW ME</h1>
+                <div class="col-9-10">
+                    <div class="col-3 background-image">
+                        <img src="{{ url_for('static', filename='images/aboutme-images/aboutme2.png') }}">
+                    </div>
+                    <div style="padding-top: 5%;">
+                        <h4>
+                            Hello there! Nice to meet you! <br>
+                            I'm Thanh Vy. I graduated from Saigon University with an engineering degree in information technology. <br>
+                            With a passion for technology, I followed this difficult path. My goal is to become a professional developer in the next few years. <br>
+                            Because I am an introvert with a rating of 98% in the personality test, I have a great wish to be able to work at home without having to go out. <br>
+                        </h4>
+                    </div>
+                </div>
+                <div class="col-1">
+                    <h2>MY FAVORIES</h2>
+                </div>
+
+                <!--Gallery-->
+                <aside id="gallery" class="row text-center scrollto clearfix" data-featherlight-gallery data-featherlight-filter="a">
+                    <div class="col-2" style="padding-right: 5px;">
+                        <a href="{{ url_for('static', filename='images/aboutme-images/bts.jpg') }}" data-featherlight="image" class="col-2-3 wow fadeIn">
+                            <img src="{{ url_for('static', filename='images/aboutme-images/bts.jpg') }}"/>
+                        </a>
+                        <a href="{{ url_for('static', filename='images/aboutme-images/music.jpg') }}" data-featherlight="image" class="col-3 wow fadeIn">
+                            <img src="{{ url_for('static', filename='images/aboutme-images/music.jpg') }}"/>
+                        </a>
+                        <a href="{{ url_for('static', filename='images/aboutme-images/rain.jpg') }}" data-featherlight="image" class="col-3 wow fadeIn">
+                            <img src="{{ url_for('static', filename='images/aboutme-images/rain.jpg') }}"/>
+                        </a>
+                        <a href="{{ url_for('static', filename='images/aboutme-images/game.jpg') }}" data-featherlight="image" class="col-3 wow fadeIn">
+                            <img src="{{ url_for('static', filename='images/aboutme-images/game.jpg') }}"/>
+                        </a>
+                        <a href="{{ url_for('static', filename='images/aboutme-images/cat.jpg') }}" data-featherlight="image" class="col-3 wow fadeIn">
+                            <img src="{{ url_for('static', filename='images/aboutme-images/cat.jpg') }}"/>
+                        </a>
+                        <a href="{{ url_for('static', filename='images/aboutme-images/clothes.jpg') }}" data-featherlight="image" class="col-3 wow fadeIn">
+                            <img src="{{ url_for('static', filename='images/aboutme-images/clothes.jpg') }}"/>
+                        </a>
+                        <a href="{{ url_for('static', filename='images/aboutme-images/moon.jpg') }}" data-featherlight="image" class="col-2-3 wow fadeIn">
+                            <img src="{{ url_for('static', filename='images/aboutme-images/moon.jpg') }}"/>
+                        </a>
+                    </div>
+                    <div class="col-2" style="padding-left: 5px;">
+                        <div class="col-2-3">
+                            <a href="{{ url_for('static', filename='images/aboutme-images/ironman.jpg') }}" data-featherlight="image" class="col-2 wow fadeIn">
+                                <img src="{{ url_for('static', filename='images/aboutme-images/ironman.jpg') }}"/>
+                            </a>
+                            <a href="{{ url_for('static', filename='images/aboutme-images/draw.jpg') }}" data-featherlight="image" class="col-2 wow fadeIn">
+                                <img src="{{ url_for('static', filename='images/aboutme-images/draw.jpg') }}"/>
+                            </a>
+                            <a href="{{ url_for('static', filename='images/aboutme-images/icecream.jpg') }}" data-featherlight="image" class="col-2 wow fadeIn">
+                                <img src="{{ url_for('static', filename='images/aboutme-images/icecream.jpg') }}"/>
+                            </a>
+                            <a href="{{ url_for('static', filename='images/aboutme-images/sea.jpg') }}" data-featherlight="image" class="col-2 wow fadeIn">
+                                <img src="{{ url_for('static', filename='images/aboutme-images/sea.jpg') }}"/>
+                            </a>
+                            <a href="{{ url_for('static', filename='images/aboutme-images/dog.jpg') }}" data-featherlight="image" class="col-2 wow fadeIn">
+                                <img src="{{ url_for('static', filename='images/aboutme-images/dog.jpg') }}"/>
+                            </a>
+                        </div>
+                        <div class="col-3">
+                            <a href="{{ url_for('static', filename='images/aboutme-images/manga.jpg') }}" data-featherlight="image" class="col-1 wow fadeIn">
+                                <img src="{{ url_for('static', filename='images/aboutme-images/manga.jpg') }}"/>
+                            </a>
+                            <a href="{{ url_for('static', filename='images/aboutme-images/bed.jpg') }}" data-featherlight="image" class="col-1 wow fadeIn">
+                                <img src="{{ url_for('static', filename='images/aboutme-images/bed.jpg') }}"/>
+                            </a>
+                        </div>
+                    </div>
+                </aside>
+                <!--End of Gallery-->
+            </div>
+        </section>
+
+
+        <!--End of AboutMe-->
+
+    </main>
+    <!--End Main Content Area-->
+
+{% endblock %}
+
