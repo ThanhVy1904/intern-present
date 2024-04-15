@@ -23,11 +23,11 @@
                     </div>
                 </div>
                 <div class="col-1">
-                    <h2>MY FAVORIES</h2>
+                    <h2>MY LOVE</h2>
                 </div>
 
                 <!--Gallery-->
-                <aside id="gallery" class="row text-center scrollto clearfix" data-featherlight-gallery data-featherlight-filter="a">
+                <aside id="gallery" class="row text-center clearfix" data-featherlight-gallery data-featherlight-filter="a">
                     <div class="col-2" style="padding-right: 5px;">
                         <a href="{{ url_for('static', filename='images/aboutme-images/bts.jpg') }}" data-featherlight="image" class="col-2-3 wow fadeIn">
                             <img src="{{ url_for('static', filename='images/aboutme-images/bts.jpg') }}"/>
@@ -80,6 +80,32 @@
                     </div>
                 </aside>
                 <!--End of Gallery-->
+
+                <div class="col-1">
+                    <h2>MY FEAR/HATE</h2>
+                </div>
+                <aside id="gallery" class="row text-center clearfix" data-featherlight-gallery data-featherlight-filter="a">
+                    <a href="{{ url_for('static', filename='images/aboutme-images/crowdedplace.jpg') }}" data-featherlight="image" class="col-5 wow fadeIn">
+                        <img src="{{ url_for('static', filename='images/aboutme-images/crowdedplace.jpg') }}"/>
+                        <p>Crowded Places</p>
+                    </a>
+                    <a href="{{ url_for('static', filename='images/aboutme-images/cigarette.jpg') }}" data-featherlight="image" class="col-5 wow fadeIn">
+                        <img src="{{ url_for('static', filename='images/aboutme-images/cigarette.jpg') }}"/>
+                        <p>Cigarette</p>
+                    </a>
+                    <a href="{{ url_for('static', filename='images/aboutme-images/insect.jpg') }}" data-featherlight="image" class="col-5 wow fadeIn">
+                        <img src="{{ url_for('static', filename='images/aboutme-images/insect.jpg') }}"/>
+                        <p>Insect</p>
+                    </a>
+                    <a href="{{ url_for('static', filename='images/aboutme-images/takeapicture.jpg') }}" data-featherlight="image" class="col-5 wow fadeIn">
+                        <img src="{{ url_for('static', filename='images/aboutme-images/takeapicture.jpg') }}"/>
+                        <p>Take a picture</p>
+                    </a>
+                    <a href="{{ url_for('static', filename='images/aboutme-images/standinfrontofpeople.jpg') }}" data-featherlight="image" class="col-5 wow fadeIn">
+                        <img src="{{ url_for('static', filename='images/aboutme-images/standinfrontofpeople.jpg') }}"/>
+                        <p>Standing in front of many people</p>
+                    </a>      
+                </aside>
             </div>
         </section>
 

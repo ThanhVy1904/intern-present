@@ -22,7 +22,7 @@
                 </div>
 
                 <div class="col-2-3">
-                    <img src=" {{ url_for('static', filename='images/gallery-images/gallery-image-1.jpg') }}"/>
+                    <img src=" {{ url_for('static', filename='images/experience-images/saigonai.jpg') }}"/>
                 </div>
 
             </div>
@@ -98,7 +98,7 @@
         <!--Benefit-->
         <section id="benefit" class="clearfix benefit">
             <div class="clearfix">
-                <h3 class="col-1">BENEFIT</h3>
+                <h3 class="col-1">BENEFIT?</h3>
                 <div>
                     <div class="col-3-4 container-center">
                         <img class="col-3" src=" {{ url_for('static', filename='images/experience-images/coffeetalk.jpg') }}"/>
@@ -131,7 +131,7 @@
                     </div>
 
                     <div class="col-3-4 container-center">
-                        <img class="col-3" src=" {{ url_for('static', filename='images/experience-images/englishclass.jpg') }}"/>
+                        <img class="col-3" src="{{ url_for('static', filename='images/experience-images/englishclass.jpg') }}"/>
                         <div class="col-2">
                             <div class="benefit-heading">ENGLISH CLASS</div>
                             <div class="benefit-body">
@@ -151,10 +151,12 @@
         <section id="memories" class="clearfix memories">
             <div class="clearfix">
                 <div class="col-1">
-                    <h2>MEMORIES</h2>
+                    <h3>MEMORIES</h3>
                 </div>
-                <div>
-                    <body>Ghi gì đó ở đây nè</body>
+                <div class="container-center">
+                    <img class="col-4" src="{{ url_for('static', filename='images/experience-images/firstcoffeetalk.jpg') }}"/>
+                <img class="col-2" src="{{ url_for('static', filename='images/experience-images/karaoke.jpg') }}"/>
+                <img class="col-4" src="{{ url_for('static', filename='images/experience-images/cookiedecoration.jpg') }}"/>
                 </div>
             </div>
         </section>
