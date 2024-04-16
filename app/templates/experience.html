@@ -26,6 +26,77 @@
             </div>
         </section>
         <!--End of Company-->
+
+        <!--Dev team-->
+        <section id="devteam" class="clearfix devteam">
+            <div class="clearfix">
+                <div class="col-1">
+                    <h3>DEV TEAM</h3>
+                    <h4>
+                        A diverse team of professional software developers, project coordinator, and testing experts, all working towards building high-quality and efficient products.
+                        The projects they are working on are Patti2, Fusion doc, and Adult Care Web.
+                    </h4>
+                </div>
+                <!--Gallery-->   
+                <aside id="gallery" class="row text-center clearfix" data-featherlight-gallery data-featherlight-filter="a">
+                    <a href="{{ url_for('static', filename='images/experience-images/anhVu.png') }}" data-featherlight="image" class="col-5 wow fadeIn">
+                        <img src="{{ url_for('static', filename='images/experience-images/anhVu.png') }}"/>
+                        <p>A.VŨ</p>
+                        <p>COO</p>
+                    </a>
+                    <a href="{{ url_for('static', filename='images/experience-images/chiHong.png') }}" data-featherlight="image" class="col-5 wow fadeIn">
+                        <img src="{{ url_for('static', filename='images/experience-images/chiHong.png') }}"/>
+                        <p>C.HỒNG</p>
+                        <p>Community Manager</p>
+                    </a>
+                    <a href="{{ url_for('static', filename='images/experience-images/Thoa.png') }}" data-featherlight="image" class="col-5 wow fadeIn">
+                        <img src="{{ url_for('static', filename='images/experience-images/Thoa.png') }}"/>
+                        <p>THOA</p>
+                        <p>Project Coordinator</p>
+                    </a>
+                    <a href="{{ url_for('static', filename='images/experience-images/chiTAnh.png') }}" data-featherlight="image" class="col-5 wow fadeIn">
+                        <img src="{{ url_for('static', filename='images/experience-images/chiTAnh.png') }}"/>
+                        <p>C.ANH</p>
+                        <p>Admin Assistant/Tester</p>
+                    </a>
+                    <a href="{{ url_for('static', filename='images/experience-images/anhQuyen.png') }}" data-featherlight="image" class="col-5 wow fadeIn">
+                        <img src="{{ url_for('static', filename='images/experience-images/anhQuyen.png') }}"/>
+                        <p>A.QUYỀN</p>
+                        <p>Tester</p>
+                    </a>    
+                </aside>
+                <aside id="gallery" class="row text-center clearfix" data-featherlight-gallery data-featherlight-filter="a">
+                    <a href="{{ url_for('static', filename='images/experience-images/anhHoang.png') }}" data-featherlight="image" class="col-5 wow fadeIn">
+                        <img src="{{ url_for('static', filename='images/experience-images/anhHoang.png') }}"/>
+                        <p>A.HOÀNG</p>
+                        <p>Developer</p>
+                    </a> 
+                    <a href="{{ url_for('static', filename='images/experience-images/anhTri.png') }}" data-featherlight="image" class="col-5 wow fadeIn">
+                        <img src="{{ url_for('static', filename='images/experience-images/anhTri.png') }}"/>
+                        <p>A.TRÍ</p>
+                        <p>Developer</p>
+                    </a>
+                    <a href="{{ url_for('static', filename='images/experience-images/anhDung.png') }}" data-featherlight="image" class="col-5 wow fadeIn">
+                        <img src="{{ url_for('static', filename='images/experience-images/anhDung.png') }}"/>
+                        <p>A.DŨNG</p>
+                        <p>Developer</p>
+                    </a>
+                    <a href="{{ url_for('static', filename='images/experience-images/Thien.png') }}" data-featherlight="image" class="col-5 wow fadeIn">
+                        <img src="{{ url_for('static', filename='images/experience-images/Thien.png') }}"/>
+                        <p>THIỆN</p>
+                        <p>Developer</p>
+                    </a>
+                    <a href="{{ url_for('static', filename='images/experience-images/Nguyen.png') }}" data-featherlight="image" class="col-5 wow fadeIn">
+                        <img src="{{ url_for('static', filename='images/experience-images/Nguyen.png') }}"/>
+                        <p>NGUYÊN</p>
+                        <p>Developer</p>
+                    </a>     
+                </aside>
+                <!--End of Gallery-->
+            </div>
+        </section>
+        <!--End of Dev team-->
+
         <section id="expectations" class="clearfix expectations">
             <div class="col-1">
                 <img class="col-2" src=" {{ url_for('static', filename='images/experience-images/experience.jpg') }}"/>
@@ -50,7 +121,7 @@
                         <h4>
                             <ul>
                                 <li>New operating system MacOS</li>
-                                <li>After fixing this bug, another bug appears</li>
+                                <li>Bug</li>
                                 <li>Communicate</li>
                                 <li>Speaking English</li>
                                 <li>The real project is a bit difficult to understand all</li>
@@ -153,11 +224,19 @@
                 <div class="col-1">
                     <h3>MEMORIES</h3>
                 </div>
-                <div class="container-center">
-                    <img class="col-4" src="{{ url_for('static', filename='images/experience-images/firstcoffeetalk.jpg') }}"/>
-                    <img class="col-2" src="{{ url_for('static', filename='images/experience-images/karaoke.jpg') }}"/>
-                    <img class="col-4" src="{{ url_for('static', filename='images/experience-images/cookiedecoration.jpg') }}"/>
-                </div>
+                <aside class="row" data-featherlight-gallery data-featherlight-filter="a">
+                    <div class="container-center">
+                        <a href="{{ url_for('static', filename='images/experience-images/firstcoffeetalk.jpg') }}" data-featherlight="image" class="col-4 wow fadeIn">
+                            <img src="{{ url_for('static', filename='images/experience-images/firstcoffeetalk.jpg') }}"/>
+                        </a>
+                        <a href="{{ url_for('static', filename='images/experience-images/karaoke.jpg') }}" data-featherlight="image" class="col-2 wow fadeIn">
+                            <img src="{{ url_for('static', filename='images/experience-images/karaoke.jpg') }}"/>
+                        </a>
+                        <a href="{{ url_for('static', filename='images/experience-images/cookiedecoration.jpg') }}" data-featherlight="image" class="col-4 wow fadeIn">
+                            <img src="{{ url_for('static', filename='images/experience-images/cookiedecoration.jpg') }}"/>
+                        </a>
+                    </div>
+                </aside>
             </div>
         </section>
         <!--End of Memories-->
