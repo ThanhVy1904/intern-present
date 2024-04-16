@@ -7,10 +7,9 @@
         <!--AboutMe-->
         <section id="about" class="about">
             <div class="row clearfix">
-                <!--Image AboutMe-->
                 <h1 style="text-align: center;">GET TO KNOW ME</h1>
                 <div class="col-9-10">
-                    <div class="col-3 background-image">
+                    <div class="col-3">
                         <img src="{{ url_for('static', filename='images/aboutme-images/aboutme2.png') }}">
                     </div>
                     <div style="padding-top: 5%;">
@@ -80,10 +79,11 @@
                     </div>
                 </aside>
                 <!--End of Gallery-->
-
+             
                 <div class="col-1">
                     <h2>MY FEAR/HATE</h2>
                 </div>
+                <!--Gallery-->   
                 <aside id="gallery" class="row text-center clearfix" data-featherlight-gallery data-featherlight-filter="a">
                     <a href="{{ url_for('static', filename='images/aboutme-images/crowdedplace.jpg') }}" data-featherlight="image" class="col-5 wow fadeIn">
                         <img src="{{ url_for('static', filename='images/aboutme-images/crowdedplace.jpg') }}"/>
@@ -106,10 +106,10 @@
                         <p>Standing in front of many people</p>
                     </a>      
                 </aside>
+                <!--End of Gallery-->
+
             </div>
         </section>
-
-
         <!--End of AboutMe-->
 
     </main>

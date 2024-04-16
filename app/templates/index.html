@@ -11,11 +11,11 @@
 
     <!--Main Content Area-->
     <main id="content">
-
+        
         <!--AboutMe-->
         <section id="about" class="about">
             <div class="row clearfix">
-                <div class="col-3 background-image" style="padding-top: 4%;">
+                <div class="col-3" style="padding-top: 4%;">
                     <img src="{{ url_for('static', filename='images/aboutme-images/aboutme1.png') }}">
                 </div>
                 <div class="col-2-3 about text-justify">
@@ -27,7 +27,7 @@
                         This website is my final internship project where I share about myself and my internship journey at SAIGONAI. 
                     </h4>
                     <h4>
-                        Within these pages, you'll discover detailed information about me and my internship experiences, including my lessons, challenges, and precious memories. 
+                        These pages will reveal detailed information about me and my internship experiences, including my lessons, challenges, and precious memories. 
                     </h4>
                     <h4 style="padding-bottom: 5%;">
                         Thank you for taking the time to explore my website
@@ -39,7 +39,6 @@
         <!--End of AboutMe-->
     </main>
     <!--End Main Content Area-->
-
 
 {% endblock %}
 {% block contact_content %}
@@ -84,12 +83,11 @@
                                 <p> {{ form.submit() }}</p>
                                 </form>
                         </div>
-                    <!-- </div> -->
                     <!--End of Form-->
                     {% endif %}     
                 </div>
                 <div class="col-2 background-contact">
-                        <h1 class="section-heading col-1 text-center">CONTACT</h1>
+                    <h1 class="section-heading col-1 text-center">CONTACT</h1>
                     <div style="padding-left: 17%;">
                         <div class="col-1">
                             <div class="icon-block">
@@ -118,7 +116,6 @@
                     </div>
                 </div>
             </div>
-
         </aside>
         <!--End of Contact-->
     </main>
