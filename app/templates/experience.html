@@ -153,11 +153,25 @@
                 <div class="col-1">
                     <h3>MEMORIES</h3>
                 </div>
-                <div class="container-center">
+                <!-- <div class="container-center">
                     <img class="col-4" src="{{ url_for('static', filename='images/experience-images/firstcoffeetalk.jpg') }}"/>
                     <img class="col-2" src="{{ url_for('static', filename='images/experience-images/karaoke.jpg') }}"/>
                     <img class="col-4" src="{{ url_for('static', filename='images/experience-images/cookiedecoration.jpg') }}"/>
-                </div>
+                    
+                </div> -->
+                <aside class="row" data-featherlight-gallery data-featherlight-filter="a">
+                    <div class="container-center">
+                        <a href="{{ url_for('static', filename='images/experience-images/firstcoffeetalk.jpg') }}" data-featherlight="image" class="col-4 wow fadeIn">
+                            <img src="{{ url_for('static', filename='images/experience-images/firstcoffeetalk.jpg') }}"/>
+                        </a>
+                        <a href="{{ url_for('static', filename='images/experience-images/karaoke.jpg') }}" data-featherlight="image" class="col-2 wow fadeIn">
+                            <img src="{{ url_for('static', filename='images/experience-images/karaoke.jpg') }}"/>
+                        </a>
+                        <a href="{{ url_for('static', filename='images/experience-images/cookiedecoration.jpg') }}" data-featherlight="image" class="col-4 wow fadeIn">
+                            <img src="{{ url_for('static', filename='images/experience-images/cookiedecoration.jpg') }}"/>
+                        </a>
+                    </div>
+                </aside>
             </div>
         </section>
         <!--End of Memories-->
